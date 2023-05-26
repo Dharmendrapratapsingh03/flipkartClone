@@ -27,7 +27,7 @@ const Wrapper = styled(Box)(({ theme }) => ({
 
 
 const Container = styled(Link)(({ theme }) => ({
-    display : 'flex',
+    display: 'flex',
     textDecoration: 'none',
     color: 'inherit',
     [theme.breakpoints.down('md')]: {
@@ -64,7 +64,7 @@ const CustomButtons = () => {
         <Wrapper>
             {
                 account ? <Profile account= {account} setAccount={setAccount} /> :
-                    <LoginButton variant ="contained" onclick={() => openDialog()}> Login</LoginButton>
+                    <LoginButton variant ="contained" onClick={() => openDialog()}> Login</LoginButton>
             }
             
             

@@ -53,11 +53,11 @@ const CartItem = ({ item }) => {
                     <Box component= "span"><img src ={fassured} alt="flipkart" style={{ width: 50, marginLeft: 10 }} /></Box>
                 </SmallText>
                 <Typography style={{ margin: '20px 0'}}> 
-                <Box component="span" style={{ fontWeight: 600, fontSize: 18 }}>₹{item.price.cost}</Box>&nbsp;&nbsp;&nbsp;
-                <Box component="span" style={{ color: '#878787' }}><strike>₹{item.price.mrp}</strike></Box>&npsp;&nbsp;&nbsp;
-                <Box component="span" style={{ color: '#388E3C' }}>{item.price.discount}</Box>
+                    <Box component="span" style={{ fontWeight: 600, fontSize: 18 }}>₹{item.price.cost}</Box>&nbsp;&nbsp;&nbsp;
+                    <Box component="span" style={{ color: '#878787' }}><strike>₹{item.price.mrp}</strike></Box>&npsp;&nbsp;&nbsp;
+                    <Box component="span" style={{ color: '#388E3C' }}>{item.price.discount}</Box>
                 </Typography>
-                <Remove onclick={() => removeItemFromcart(item.id)}>Remove</Remove>
+                <Remove onClick={() => removeItemFromcart(item.id)}>Remove</Remove>
             </Box>
         </Component>
     )

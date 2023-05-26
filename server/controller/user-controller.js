@@ -26,7 +26,7 @@ export const userLogin = async (request, response) => {
         const username = request.body.username;
         const password = request.body.password;
 
-        if user = await User.findOne({ username: username , password: password });
+         let user = await User.findOne({ username: username , password: password });
         if (user) {
             return response.status(200).json({ data: user });
         } else {

@@ -32,7 +32,7 @@ const ButtonWrapper = styled(Box)`
 `;
 
 const StyledButton = styled(Button)`
-    dispatch: flex;
+    display: flex;
     margin-left: auto;
     background: #fb641b;
     color: #fff;
@@ -77,7 +77,7 @@ const Cart = () => {
                             ))
                         }
                         <ButtonWrapper>
-                            <StyledButton onclick = {() => buyNow()}>Place Order </StyledButton>
+                            <StyledButton onClick = {() => buyNow()}>Place Order </StyledButton>
                         </ButtonWrapper>
                      </LeftComponent>
                      <Grid item lg={3} md={3} sm={12} xs={12}>

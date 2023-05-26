@@ -62,7 +62,7 @@ const Header =() =>{
     }
 
     const list = () => (
-        <Box style={{ width: 200 }} onclick={handleClose}>
+        <Box style={{ width: 200 }} onClick={handleClose}>
             <List>
                 <ListItem button>
                     <CustomButtons />
@@ -74,7 +74,7 @@ const Header =() =>{
     return(
         <StyledHeader>
             <Toolbar style={{ minHeight: 55}}>
-                <MenuButton color= "inherit" onclick={handleOpen}>
+                <MenuButton color= "inherit" onClick={handleOpen}>
                    <Menu />
                 </MenuButton>  
 

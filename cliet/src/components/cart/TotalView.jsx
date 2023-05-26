@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
+/* eslint-disable array-callback-return */
+import { useState, useEffect } from 'react';
 
-import { Typography, Box, styled } from "@mui/material";
-import CartItem from "./CartItem";
+import { Typography, Box, styled, CartItems } from '@mui/material';
 
 const Header = styled(Box)`
-    padding = : 15px 24px;
+    padding: 15px 24px;
     background: #fff;
     border-bottom: 1px solid #f0f0f0;
 `;
@@ -40,11 +40,11 @@ const TotalView = ({ cartItems }) => {
 
     useEffect(() => {
         totalAmount();
-    }, [CartItems])
+    })
 
     const totalAmount = () => {
         let price = 0, discount = 0;
-        cartItems.map(item => {
+        cartItems.map((item) => {
             price += item.price.mrp;
             discount += (item.price.mrp - item.price.cost);
         });
@@ -54,9 +54,9 @@ const TotalView = ({ cartItems }) => {
 
     return (
         <Box>
-            <Heading>
-                <Typography>Price Details</Typography>
-            </Heading>
+            <Header>
+                <Heading>Price Details</Heading>
+            </Header>
             <Container>
                 <Typography>Price ({cartItems?.length} item)
                     <Price component="span">₹{price}</Price>
